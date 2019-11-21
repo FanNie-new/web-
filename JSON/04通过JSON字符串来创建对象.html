@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>用 JSON 字符串创建对象</h1>
+    <p id="demo"></p>
+    <script>
+    var txt = '{"name":"Bill Gates", "age":62, "city":"Seattle"}'
+    var obj = JSON.parse(txt);
+    document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+    </script>
+</body>
+
+</html>
