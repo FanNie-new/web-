@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("button").click(function() {
+            $("p").hide(1000, function() {
+                alert("The paragraph is now hidden");
+            });
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <button type="button">Hide</button>
+    <p>This is a paragraph with little content.</p>
+</body>
+
+</html>

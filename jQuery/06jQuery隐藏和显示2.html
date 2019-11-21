@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hide()和show()</title>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".hide").click(function(){
+			$(this).parents(".ex").hide("slow");
+		});
+	})	
+	</script>
+	<style type="text/css">
+		div.ex{
+			background-color: #e5eecc;
+			padding: 7px;
+			border: solid 1px #3c3c3;
+		}
+	</style>
+</head>
+<body>
+	<h3>中国办事处</h3>
+	<div class="ex">
+		<button class="hide" type="button">隐藏</button>
+		<p>联系人：张先生<br/>
+			北三环中路100号<br/>
+			北京
+		</p>
+	</div>
+
+	<h3>美国办事处</h3>
+	<div class="ex">
+		<button class="hide" type="button">隐藏</button>
+		<p>联系人：David<br/>
+			第五大街200号<br/>
+			纽约
+		</p>
+	</div>
+</body>
+</html>
